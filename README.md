@@ -8,3 +8,4 @@
 
 ### 3.29更新  
 增加两个软件源（openwrt常用软件包+passwall基本依赖）  
+增加frpc、fprs、cf-ddns组件取消网易云插件  
