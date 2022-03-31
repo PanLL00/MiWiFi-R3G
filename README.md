@@ -10,5 +10,5 @@
 增加两个软件源（openwrt常用软件包+passwall基本依赖）  
 增加frpc、fprs、cf-ddns组件取消网易云插件  
 
-### 3.30更新  
-修改默认Wi-Fi名称：Xiaomi_R3G、Xiaomi_R3G_5G（未测试）  
+### 4.1更新  
+修改默认Wi-Fi名称：Xiaomi_R3G、Xiaomi_R3G_5G
