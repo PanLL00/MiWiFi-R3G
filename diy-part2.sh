@@ -21,3 +21,7 @@ sed -i "2i uci set wireless.@wifi-iface[0].ssid=Xiaomi_R3G" ./package/lean/defau
 sed -i "3i uci set wireless.@wifi-iface[1].ssid=Xiaomi_R3G_5G" ./package/lean/default-settings/files/zzz-default-settings
 sed -i "4i uci commit wireless" ./package/lean/default-settings/files/zzz-default-settings
 sed -i "5i wifi" ./package/lean/default-settings/files/zzz-default-settings
+
+# 解决Android TV激活问题
+sed -i "2i echo "203.107.6.88 time.android.com">>/etc/hosts" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "3i echo "">> /etc/hosts" ./package/lean/default-settings/files/zzz-default-settings
