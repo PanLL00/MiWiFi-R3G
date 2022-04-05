@@ -10,13 +10,9 @@
 # Description: OpenWrt DIY script part 1 (Before Update feeds)
 #
 
-# Uncomment a feed source
-#sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
+# 取消注释 Feed 来源
+sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-# Add a feed source
-#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+# 添加两个 Feed 软件源（SSR Plus+、passwall）
+echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
-
-# 增加两个软件源(openwrt常用软件包+passwall基本依赖)
-# git clone https://github.com/kenzok8/openwrt-packages.git package/openwrt-packages
-# git clone https://github.com/kenzok8/small.git package/openwrt-small
