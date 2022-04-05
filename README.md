@@ -19,3 +19,4 @@
 优化uci命令后增加\n换行符  
 暂时关闭软件源  
 .config配置文件仅保留机型选择  
+待添加软件：ttyd、frpc、frps、istore
