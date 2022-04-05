@@ -23,5 +23,9 @@ sed -i "4i uci commit wireless" ./package/lean/default-settings/files/zzz-defaul
 sed -i "5i wifi" ./package/lean/default-settings/files/zzz-default-settings
 
 # 解决Android TV激活问题
-sed -i "2i echo "203.107.6.88 time.android.com">>/etc/hosts" ./package/lean/default-settings/files/zzz-default-settings
-sed -i "3i echo "">> /etc/hosts" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "2i uci add dhcp domain" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "3i uci set dhcp.@domain[0]=domain" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "4i uci set dhcp.@domain[0].name='time.android.com'" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "5i uci set dhcp.@domain[0].ip='203.107.6.88'" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "6i uci commit dhcp" ./package/lean/default-settings/files/zzz-default-settings
+sed -i "7i /etc/init.d/dnsmasq restart" ./package/lean/default-settings/files/zzz-default-settings
