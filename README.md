@@ -17,6 +17,4 @@
 ### 4.5更新  
 将Android TV激活改用uci命令方式实现  
 优化uci命令后增加\n换行符  
-暂时关闭软件源  
-.config配置文件仅保留机型选择  
-待添加软件：ttyd、frpc、frps、istore
+取消新添加的软件源，SSR Plus+插件可以使用自带编译文件完成  
