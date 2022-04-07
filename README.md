@@ -18,3 +18,6 @@
 将Android TV激活改用uci命令方式实现  
 优化uci命令后增加\n换行符  
 取消新添加的软件源，SSR Plus+插件可以使用自带编译文件完成  
+
+### 4.7更新  
+新增fprc、frps、cloudflare-ddns插件  
