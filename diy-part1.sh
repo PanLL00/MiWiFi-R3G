@@ -16,3 +16,6 @@ sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 # 添加两个 Feed 软件源（SSR Plus+、passwall）
 echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
 #echo 'src-git passwall https://github.com/xiaorouji/openwrt-passwall' >>feeds.conf.default
+
+# 添加istore应用商店
+echo 'src-git istore https://github.com/linkease/istore' >>feeds.conf.default
